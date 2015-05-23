@@ -1,0 +1,17 @@
+application: roy-a-perdue
+version: 1
+runtime: php55
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /images
+  static_dir: images/
+
+- url: /(.*\.(gif|png|jpg))$
+  static_files: images/\1
+  upload: static/.*\.(gif|png|jpg)$
+
+- url: .*
+  script: index.html
+

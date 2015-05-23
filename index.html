@@ -1,0 +1,538 @@
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <style>
+        .bs-callout {
+            -moz-border-bottom-colors: none;
+            -moz-border-left-colors: none;
+            -moz-border-right-colors: none;
+            -moz-border-top-colors: none;
+            border-color: #eee;
+            border-image: none;
+            border-radius: 3px;
+            border-style: solid;
+            border-width: 1px 1px 1px 5px;
+            margin-bottom: 5px;
+            padding: 20px;
+        }
+        .bs-callout:last-child {
+            margin-bottom: 0px;
+        }
+        .bs-callout h4 {
+            margin-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .bs-callout-success {
+            border-left-color: #5cb85c;
+        }
+        .bs-callout-success h4 {
+            color: #5cb85c;
+        }
+
+        .resume .list-group-item:first-child, .resume .list-group-item:last-child{
+            border-radius:0;
+        }
+
+        /* skill meter in resume. copy pasted from http://bootsnipp.com/snippets/featured/progress-bar-meter */
+
+        .progress-bar {
+            text-align: left;
+            white-space: nowrap;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            cursor: pointer;
+        }
+
+        .progress-bar > .progress-type {
+            padding-left: 10px;
+        }
+
+        .progress-meter {
+            min-height: 15px;
+            border-bottom: 2px solid rgb(160, 160, 160);
+            margin-bottom: 15px;
+        }
+
+        .progress-meter > .meter {
+            position: relative;
+            float: left;
+            min-height: 15px;
+            border-width: 0px;
+            border-style: solid;
+            border-color: rgb(160, 160, 160);
+        }
+
+        .progress-meter > .meter-left {
+            border-left-width: 2px;
+        }
+
+        .progress-meter > .meter-right {
+            float: right;
+            border-right-width: 2px;
+        }
+
+        .progress-meter > .meter-right:last-child {
+            border-left-width: 2px;
+        }
+
+        .progress-meter > .meter > .meter-text {
+            position: absolute;
+            display: inline-block;
+            bottom: -20px;
+            width: 100%;
+            font-weight: 700;
+            font-size: 0.85em;
+            color: rgb(160, 160, 160);
+            text-align: left;
+        }
+
+        .progress-meter > .meter.meter-right > .meter-text {
+            text-align: right;
+        }
+
+        .phone .email{
+            margin-left: 8px;
+            margin-right: 4px;
+            font-weight: bold;
+        }
+
+        .name{
+            font-size: 1.5em;
+        }
+
+        .tabDes {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #portfolio{
+            margin-top: 10px;
+            margin-bottom: 100px;
+        }
+
+        #coverPane{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body >
+<div class="container">
+
+<div class="resume">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-offset-1 col-lg-offset-2 col-lg-8">
+<div class="bs-callout bs-callout-success">
+    <div class="text-center">
+        <div class="name"><strong>Roy A. Perdue</strong></div>
+        <div id="address">215 West Oxbow Road - Shelburne Falls, MA 01370</div>
+        <ul class="list-inline">
+            <li><span class="glyphicon glyphicon-phone" aria-hidden="true"></span></li>
+            <li><div class="phone">413-625-2108</div></li>
+            <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></li>
+            <li><div class="email">roy.perdue.a@gmail.com</div></li>
+        </ul>
+    </div>
+    <hr>
+    <h4>FOCUS</h4>
+    <p>
+        Position as <mark>Software Engineer</mark> where a B.S. in Computer Science, experience in Object-Oriented
+        programming, and knowledge of web development are desirable.
+    </p>
+    <hr>
+    <h4>TECHNICAL EXPERTISE</h4>
+    <div class="row">
+        <dl class="dl-horizontal">
+            <dt>Programming Languages:</dt>
+            <dd>Java - C++ - PHP - CSS - JavaScript - Ruby - XML - HTML - SQL - Visual Basic</dd>
+            <dt>Platforms/Libraries:</dt>
+            <dd>jQuery - Bootstrap - Ruby on Rails - Android - GitHub - Google Cloud Platform</dd>
+            <dt>Software:</dt>
+            <dd>Mac/Linux terminal - Eclipse - Android Studio - Windows - Visual Studio</dd>
+        </dl>
+    </div>
+    <hr>
+    <h4>RELATED EXPERIENCE</h4>
+    <div class="row list-group">
+        <div class="list-group-item col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <dl class="dl-horizontal">
+                <dt>Programming:</dt>
+                <dd>1</dd>
+                <dd>2</dd>
+                <dd>3</dd>
+            </dl>
+        </div>
+        <div class="list-group-item col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <dl class="dl-horizontal">
+                <dt>Collaborative Web Design:</dt>
+                <dd>1</dd>
+                <dd>2</dd>
+                <dd>3</dd>
+            </dl>
+        </div>
+        <div class="list-group-item col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <dl class="dl-horizontal">
+                <dt>Customer Service:</dt>
+                <dd>1</dd>
+                <dd>2</dd>
+                <dd>3</dd>
+            </dl>
+        </div>
+    </div>
+    <hr>
+    <h4>Language and Platform Skills</h4>
+    <ul class="list-group">
+        <a class="list-group-item inactive-link" href="#">
+            <div class="progress">
+                <div data-placement="top" style="width: 90%;"
+                     aria-valuemax="100" aria-valuemin="0" aria-valuenow="90" role="progressbar" class="progress-bar progress-bar-primary">
+                    <span class="sr-only">90%</span>
+                    <span class="progress-type">Java/ Android</span>
+                </div>
+            </div>
+            <div class="progress">
+                <div data-placement="top" style="width: 70%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="1" role="progressbar" class="progress-bar progress-bar-warning">
+                    <span class="sr-only">70%</span>
+                    <span class="progress-type">PHP/ SQL</span>
+                </div>
+            </div>
+            <div class="progress">
+                <div data-placement="top" style="width: 70%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="1" role="progressbar" class="progress-bar progress-bar-info">
+                    <span class="sr-only">70%</span>
+                    <span class="progress-type">JavaScript/ jQuery/ CSS/ Bootstrap</span>
+                </div>
+            </div>
+            <div class="progress">
+                <div data-placement="top" style="width: 50%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" role="progressbar" class="progress-bar progress-bar-danger">
+                    <span class="sr-only">60%</span>
+                    <span class="progress-type">Ruby on Rails/ Ruby</span>
+                </div>
+            </div>
+            <div class="progress">
+                <div data-placement="top" style="width: 25%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" role="progressbar" class="progress-bar progress-bar-success">
+                    <span class="sr-only">25%</span>
+                    <span class="progress-type">C++</span>
+                </div>
+            </div>
+            <div class="progress-meter">
+                <div style="width: 25%;" class="meter meter-left"><span class="meter-text">I Need Practice</span></div>
+                <div style="width: 25%;" class="meter meter-left"><span class="meter-text">I know little</span></div>
+                <div style="width: 30%;" class="meter meter-right"><span class="meter-text">I'm a guru</span></div>
+                <div style="width: 20%;" class="meter meter-right"><span class="meter-text">I''m good</span></div>
+            </div>
+
+        </a>
+
+    </ul>
+    <hr>
+    <h4>Education</h4>
+    <table class="table table-responsive ">
+        <thead>
+        <tr><th>Degree</th>
+            <th>Graduation Year</th>
+            <th>CGPA</th>
+            <th>College</th>
+        </tr></thead>
+        <tbody>
+        <tr>
+            <td>B.S. Computer Science</td>
+            <td>2015</td>
+            <td> 3.15 </td>
+            <td>Massachusetts College of Liberal Arts</td>
+        </tr>
+        <tr>
+            <td>A.A. Liberal Arts</td>
+            <td>2013</td>
+            <td> 3.56 </td>
+            <td>Greenfield Community College</td>
+        </tr>
+        </tbody>
+    </table>
+    <hr>
+    <div id="portfolio" class="row">
+    <h4>Portfolio</h4>
+
+    <ul class="nav nav-tabs" id="programming-languages">
+        <li><a href="#projects" data-toggle="tab">Projects Live</a></li>
+        <li><a href="#java" data-toggle="tab">.java</a></li>
+        <li><a href="#cpp" data-toggle="tab">.cpp</a></li>
+        <li><a href="#php" data-toggle="tab">.php</a></li>
+        <li><a href="#css" data-toggle="tab">.css</a></li>
+        <li><a href="#js" data-toggle="tab">.js</a></li>
+        <li><a href="#rb" data-toggle="tab">.rb</a></li>
+        <li><a href="#sql" data-toggle="tab">.sql</a></li>
+    </ul>
+
+    <!--top level tab content-->
+    <div class="tab-content">
+        <div id="projects" class="tab-pane list-group">
+            <div class="list-group-item col-xs-12 col-sm-12 col-md-12 col-lg-12 text center">
+                <h4>Hosted Projects</h4>
+            </div>
+            <div class="list-group-item col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h5>The Great Outdoors</h5>
+                <p> <strong>Uses:</strong> PHP, JavaScript, jQuery, Bootstrap, CSS, HTML</p>
+                <p></p>
+                <a href="http://1-dot-great-outdoors-deerfield-river.appspot.com/" target="_blank"><h5>Click to view the site.</h5></a>
+            </div>
+            <div class="list-group-item col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h5>Gradebook Dynamics Project</h5>
+                <p> <strong>Uses:</strong> Android/Java, JavaScript, jQuery, Bootstrap, CSS, HTML, SQL</p>
+                <p></p>
+                <a href="http://1-dot-gradebook-backend.appspot.com/" target="_blank"><h5>Click to view the project live.</h5></a>
+            </div>
+            <div class="list-group-item col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h5>Show Cards Project</h5>
+                <p> <strong>Uses:</strong> PHP, CSS, HTML</p>
+                <p></p>
+                <a href="https://secure-chamber-7391.herokuapp.com/" target="_blank"><h5>Click to view the project live.</h5></a>
+            </div>
+            <div class="list-group-item col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h5>Slot Machine Project</h5>
+                <p> <strong>Uses:</strong> PHP, JavaScript, CSS, Sql, HTML</p>
+                <p></p>
+                <a href="https://pure-falls-4029.herokuapp.com/" target="_blank"><h5>Click to view the project live.</h5></a>
+            </div>
+        </div>
+        <div id="java" class="tab-pane">
+            <ul class="nav nav-tabs" id="java_code">
+                <li><a href="#java_tabs1" data-toggle="tab">Whac-A-Mole</a></li>
+                <li><a href="#java_tabs2" data-toggle="tab">Collectors Album - Group Project -</a></li>
+                <li><a href="#java_tabs3" data-toggle="tab">IDecision - Interface Project -</a></li>
+            </ul>
+        </div>
+        <div id="cpp" class="tab-pane">
+            <ul class="nav nav-tabs" id="cpp_code">
+                <li><a href="#cpp_tabs" data-toggle="tab">Shot Gun Shell</a></li>
+
+            </ul>
+        </div>
+        <div id="php" class="tab-pane">
+            <ul class="nav nav-tabs" id="php_code">
+                <li><a href="#php_tabs" data-toggle="tab">Blast of Cash</a></li>
+
+            </ul>
+        </div>
+        <div id="css" class="tab-pane">
+            <ul class="nav nav-tabs" id="css_code">
+                <li><a href="#css_tabs" data-toggle="tab">Blast of Cash - CSS -</a></li>
+
+            </ul>
+        </div>
+        <div id="js" class="tab-pane">
+            <ul class="nav nav-tabs" id="js_code">
+                <li><a href="#js_tabs" data-toggle="tab">JavaScript & jQuery</a></li>
+
+            </ul>
+        </div>
+        <div id="rb" class="tab-pane">
+            <ul class="nav nav-tabs" id="rb_code">
+                <li><a href="#rb_tabs" data-toggle="tab">Ruby</a></li>
+
+            </ul>
+        </div>
+        <div id="sql" class="tab-pane">
+            <ul class="nav nav-tabs" id="sql_code">
+                <li><a href="#sql_tabs" data-toggle="tab">Sql Class Assignment 2</a></li>
+
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="tab-content">
+        <div id="java_tabs1" class="tab-pane">
+            <div class="page-header text-center">
+                <h1>Whac-A-Mole</h1>
+            </div>
+            <div class="row">
+                <div class="tabDes text-left col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <dl class="dl-horizontal pull-left">
+                        <dt>Design Patterns Utilized:</dt>
+                        <dd>Model View Controller - Observer - Singleton.</dd>
+                    </dl>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <script src="https://gist.github.com/royperdue/007a8e1bf778fa562006.js"></script>
+                </div>
+            </div>
+        </div>
+        <div id="java_tabs2" class="tab-pane">
+            <div class="page-header text-center">
+                <h1>Collectors Album - Group Project -</h1>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <span class="label label-primary label-lg">ERD Diagram</span>
+                </div>
+                <div class="tabDes text-left col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <img src="/images/ERD.png" class="img-responsive img-center"/>
+                    <p></p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <script src="https://gist.github.com/royperdue/0335320fcfeebaccd113.js"></script>
+                </div>
+            </div>
+        </div>
+        <div id="java_tabs3" class="tab-pane">
+            <div class="page-header text-center">
+                <h1>IDecision - Interface Project -</h1>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <span class="label label-primary label-lg">ERD Diagram</span>
+                </div>
+                <div class="tabDes text-left col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <img src="/images/erd_interface.png" class="img-responsive img-center"/>
+                    <p></p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <script src="https://gist.github.com/royperdue/220ffb9ea3ccf76b1af0.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-content">
+        <div id="cpp_tabs" class="tab-pane">
+            <div class="page-header text-center">
+                <h1>Shot Gun Shell</h1>
+            </div>
+            <div class="row">
+                <div class="tabDes text-left col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <p></p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <script src="https://gist.github.com/royperdue/31f36ee29aaf4252d000.js"></script>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="tab-content">
+        <div id="php_tabs" class="tab-pane">
+            <div class="page-header text-center">
+                <h1>Blast of Cash</h1>
+            </div>
+            <div class="row">
+                <div class="tabDes text-left col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <p></p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <script src="https://gist.github.com/royperdue/49ccc63233f05a4ba20b.js"></script>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="tab-content">
+        <div id="css_tabs" class="tab-pane">
+            <div class="page-header text-center">
+                <h1>Blast of Cash - CSS - </h1>
+            </div>
+            <div class="row">
+                <div class="tabDes text-left col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <p></p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <script src="https://gist.github.com/royperdue/0ac36aa0abcf3eff8635.js"></script>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="tab-content">
+        <div id="js_tabs" class="tab-pane">
+            <div class="page-header text-center">
+                <h1>JavaScript & jQuery</h1>
+            </div>
+            <div class="row">
+                <div class="tabDes text-left col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <p></p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <script src="https://gist.github.com/royperdue/5415de02df6212c80084.js"></script>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="tab-content">
+        <div id="rb_tabs" class="tab-pane">
+            <div class="page-header text-center">
+                <h1>Ruby</h1>
+            </div>
+            <div class="row">
+                <div class="tabDes text-left col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <p></p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <script src="https://gist.github.com/royperdue/e093a0e16e7c2f6046fc.js"></script>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="tab-content">
+        <div id="sql_tabs" class="tab-pane">
+            <div class="page-header text-center">
+                <h1>SQL Class Assignment 2</h1>
+            </div>
+            <div class="row">
+                <div class="tabDes text-left col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <p></p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <script src="https://gist.github.com/royperdue/cc710f1ea09054ca615b.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+    $('#programming-languages').on('click', 'a[data-toggle="tab"]', function(e) {
+        e.preventDefault();
+
+        var $link = $(this);
+
+        if (!$link.parent().hasClass('active')) {
+
+            //remove active class from other tab-panes
+            $('.tab-content:not(.' + $link.attr('href').replace('#','') + ') .tab-pane').removeClass('active');
+
+            // click first submenu tab for active section
+            $('a[href="' + $link.attr('href') + '_all"][data-toggle="tab"]').click();
+
+            // activate tab-pane for active section
+            $('.tab-content.' + $link.attr('href').replace('#','') + ' .tab-pane:first').addClass('active');
+        }
+
+    });
+</script>
+</body>
+</html>
