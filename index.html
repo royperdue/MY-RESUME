@@ -45,8 +45,6 @@
             border-radius:0;
         }
 
-        /* skill meter in resume. copy pasted from http://bootsnipp.com/snippets/featured/progress-bar-meter */
-
         .progress-bar {
             text-align: left;
             white-space: nowrap;
@@ -157,6 +155,12 @@
         .expertise-header{
             margin-bottom: 75px;
         }
+
+        .rails-lbl{
+            opacity: .6;
+            text-align: center;
+            font-size: .6em;
+        }
     </style>
 </head>
 
@@ -178,9 +182,7 @@
         </ul>
     </div>
     <hr>
-    <h4>
-        Profile
-    </h4>
+    <h4>PROFILE</h4>
     <ul>
         <li>Self-directed, hardworking computer science graduate who takes pride in
             developing innovative, well-constructed and effective customer-centered
@@ -235,6 +237,10 @@
             <img id="vb" src="/images/vb.png" class="img-rounded img-responsive center-block" alt="visual basic" width="50" height="30">
             <p class="img-lbl"><strong>Visual Basic</strong></p>
         </div>
+    </div>
+    <hr>
+    <div class="row">
+        <h5 class="expertise">Platforms / Libraries:</h5>
         <div class="col-xs-1">
             <img src="/images/jquery.jpg" class="img-rounded img-responsive center-block" alt="java" width="50" height="50">
             <p class="img-lbl"><strong>jQuery</strong></p>
@@ -243,13 +249,9 @@
             <img src="/images/bootstrap.jpg" class="img-rounded img-responsive center-block" alt="cpp" width="50" height="50">
             <p class="img-lbl"><strong>Bootstrap</strong></p>
         </div>
-    </div>
-    <hr>
-    <div class="row">
-        <h5 class="expertise">Platforms/Libraries:</h5>
         <div class="col-xs-1">
             <img src="/images/rails.png" class="img-rounded img-responsive center-block" alt="ruby" width="50" height="50">
-            <p class="img-lbl text-center"><strong>Ruby on Rails</strong></p>
+            <p class="rails-lbl"><strong>Ruby on Rails</strong></p>
         </div>
         <div class="col-xs-1">
             <img src="/images/android.png" class="img-rounded img-responsive center-block" alt="android" width="50" height="50">
@@ -308,35 +310,7 @@
         </div>
     </div>
     <hr>
-    <h4>RELATED EXPERIENCE</h4>
-    <div class="row list-group">
-        <div class="list-group-item col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <dl class="dl-horizontal">
-                <dt>Programming:</dt>
-                <dd>1</dd>
-                <dd>2</dd>
-                <dd>3</dd>
-            </dl>
-        </div>
-        <div class="list-group-item col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <dl class="dl-horizontal">
-                <dt>Collaborative Web Design:</dt>
-                <dd>1</dd>
-                <dd>2</dd>
-                <dd>3</dd>
-            </dl>
-        </div>
-        <div class="list-group-item col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <dl class="dl-horizontal">
-                <dt>Customer Service:</dt>
-                <dd>1</dd>
-                <dd>2</dd>
-                <dd>3</dd>
-            </dl>
-        </div>
-    </div>
-    <hr>
-    <h4>Language and Platform Skills</h4>
+    <h5 class="expertise">Language and Platform Skills:</h5>
     <ul class="list-group">
         <a class="list-group-item inactive-link" href="#">
             <div class="progress">
@@ -381,7 +355,37 @@
 
     </ul>
     <hr>
-    <h4>Education</h4>
+    <h4>PROJECTS</h4>
+    <div class="row list-group">
+        <div class="list-group-item col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <p><strong>Gradebook Dynamics: Digital Curriculum Platform</strong> - Senior project conceived and developed over the duration of two semesters.
+               A multi-tiered system that provides teachers the ability to utilize tablet based educational games in the classroom.
+               Consisting of an admin panel (browser client) from which teachers can monitor and assess student performance using
+               game results that are stored on google’s cloud datastore. Additionally teachers can control the launching or closing
+               of games on each student tablet (Android client) from the admin panel.
+           </p>
+            <a href="http://1-dot-gradebook-backend.appspot.com/" target="_blank"><h5>Click to view the project live.</h5></a>
+            <p> <strong>Uses:</strong> Android, Java, JavaScript, jQuery, Bootstrap, CSS, HTML, XML, SQL</p>
+        </div>
+        <div class="list-group-item col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <p><strong>Great Outdoors</strong> - Business website I built and maintain for an outdoor adventure company that specializes in river-tubing related services and supplies.</p>
+            <a href="http://1-dot-great-outdoors-deerfield-river.appspot.com/" target="_blank"><h5>Click to view the site.</h5></a>
+            <p><strong>Uses:</strong> - PHP, JavaScript, jQuery, Bootstrap, CSS, HTML</p>
+        </div>
+        <div class="list-group-item col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <p><strong>Slot Machine Game</strong> - School project from my server-side development course.</p>
+            <a href="https://pure-falls-4029.herokuapp.com/" target="_blank"><h5>Click to view the project live.</h5></a>
+            <p><strong>Uses:</strong> PHP, JavaScript, CSS, HTML, SQL</p>
+        </div>
+        <div class="list-group-item col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <p><strong>Display Cards</strong> - School project from my server-side development course.</p>
+            <p> <strong>Uses:</strong> PHP, CSS, HTML</p>
+            <p></p>
+            <a href="https://secure-chamber-7391.herokuapp.com/" target="_blank"><h5>Click to view the project live.</h5></a>
+        </div>
+    </div>
+    <hr>
+    <h4>EDUCATION</h4>
     <table class="table table-responsive ">
         <thead>
         <tr><th>Degree</th>
@@ -406,10 +410,10 @@
     </table>
     <hr>
     <div id="portfolio" class="row">
-    <h4>Portfolio</h4>
+    <h4>PORTFOLIO</h4>
 
     <ul class="nav nav-tabs" id="programming-languages">
-        <li><a href="#projects" data-toggle="tab">Projects Live</a></li>
+        <li><a href="#android" data-toggle="tab">Android</a></li>
         <li><a href="#java" data-toggle="tab">.java</a></li>
         <li><a href="#cpp" data-toggle="tab">.cpp</a></li>
         <li><a href="#php" data-toggle="tab">.php</a></li>
@@ -421,34 +425,8 @@
 
     <!--top level tab content-->
     <div class="tab-content">
-        <div id="projects" class="tab-pane list-group">
-            <div class="list-group-item col-xs-12 col-sm-12 col-md-12 col-lg-12 text center">
-                <h4>Hosted Projects</h4>
-            </div>
-            <div class="list-group-item col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <h5>The Great Outdoors</h5>
-                <p> <strong>Uses:</strong> PHP, JavaScript, jQuery, Bootstrap, CSS, HTML</p>
-                <p></p>
-                <a href="http://1-dot-great-outdoors-deerfield-river.appspot.com/" target="_blank"><h5>Click to view the site.</h5></a>
-            </div>
-            <div class="list-group-item col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <h5>Gradebook Dynamics Project</h5>
-                <p> <strong>Uses:</strong> Android/Java, JavaScript, jQuery, Bootstrap, CSS, HTML, SQL</p>
-                <p></p>
-                <a href="http://1-dot-gradebook-backend.appspot.com/" target="_blank"><h5>Click to view the project live.</h5></a>
-            </div>
-            <div class="list-group-item col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <h5>Show Cards Project</h5>
-                <p> <strong>Uses:</strong> PHP, CSS, HTML</p>
-                <p></p>
-                <a href="https://secure-chamber-7391.herokuapp.com/" target="_blank"><h5>Click to view the project live.</h5></a>
-            </div>
-            <div class="list-group-item col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <h5>Slot Machine Project</h5>
-                <p> <strong>Uses:</strong> PHP, JavaScript, CSS, Sql, HTML</p>
-                <p></p>
-                <a href="https://pure-falls-4029.herokuapp.com/" target="_blank"><h5>Click to view the project live.</h5></a>
-            </div>
+        <div id="android" class="tab-pane">
+
         </div>
         <div id="java" class="tab-pane">
             <ul class="nav nav-tabs" id="java_code">
