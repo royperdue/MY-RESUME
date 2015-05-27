@@ -103,7 +103,7 @@
             text-align: right;
         }
 
-        .phone .email{
+        .phone {
             margin-left: 8px;
             margin-right: 4px;
             font-weight: bold;
@@ -123,9 +123,39 @@
             margin-bottom: 100px;
         }
 
-        #coverPane{
-            width: 100%;
-            height: 100%;
+        #xml{
+            margin-top: 15px;
+        }
+
+        #vb{
+           margin-top: 10px;
+        }
+
+        .img-lbl{
+            opacity: .6;
+            text-align: center;
+            font-size: .5em;
+        }
+
+        .gcp{
+            text-align: left;
+            opacity: .8;
+            font-size: 1.5em;
+            font-weight: bolder;
+        }
+
+        .gcp-lbl{
+            opacity: .6;
+            text-align: left;
+            font-size: .5em;
+        }
+
+        .expertise{
+            margin-bottom: 22px;
+        }
+
+        .expertise-header{
+            margin-bottom: 75px;
         }
     </style>
 </head>
@@ -148,22 +178,134 @@
         </ul>
     </div>
     <hr>
-    <h4>FOCUS</h4>
-    <p>
-        Position as <mark>Software Engineer</mark> where a B.S. in Computer Science, experience in Object-Oriented
-        programming, and knowledge of web development are desirable.
-    </p>
+    <h4>
+        Profile
+    </h4>
+    <ul>
+        <li>Self-directed, hardworking computer science graduate who takes pride in
+            developing innovative, well-constructed and effective customer-centered
+            solutions.
+        </li>
+        <li>4+ years of hands-on programming and application design experience.</li>
+        <li>Open-minded and happy to work as a team player or autonomously.</li>
+        <li>Strong ability to conceptualize, develop and bring project to full completion.</li>
+    </ul>
     <hr>
-    <h4>TECHNICAL EXPERTISE</h4>
+    <h4 class="expertise-header">TECHNICAL EXPERTISE</h4>
+    <hr>
     <div class="row">
-        <dl class="dl-horizontal">
-            <dt>Programming Languages:</dt>
-            <dd>Java - C++ - PHP - CSS - JavaScript - Ruby - XML - HTML - SQL - Visual Basic</dd>
-            <dt>Platforms/Libraries:</dt>
-            <dd>jQuery - Bootstrap - Ruby on Rails - Android - GitHub - Google Cloud Platform</dd>
-            <dt>Software:</dt>
-            <dd>Mac/Linux terminal - Eclipse - Android Studio - Windows - Visual Studio</dd>
-        </dl>
+        <h5 class="expertise">Programming Languages:</h5>
+        <div class="col-xs-1">
+            <img src="/images/java-guy.png" class="img-rounded img-responsive center-block" alt="java" width="50" height="50">
+            <p class="img-lbl"><strong>Java</strong></p>
+        </div>
+        <div class="col-xs-1">
+            <img src="/images/C++.png" class="img-rounded img-responsive center-block" alt="cpp" width="50" height="50">
+            <p class="img-lbl"><strong>C++</strong></p>
+        </div>
+        <div class="col-xs-1">
+            <img src="/images/ruby.png" class="img-rounded img-responsive center-block" alt="ruby" width="50" height="50">
+            <p class="img-lbl"><strong>Ruby</strong></p>
+        </div>
+        <div class="col-xs-1">
+            <img src="/images/php-e.png" class="img-rounded img-responsive center-block" alt="php" width="50" height="50">
+            <p class="img-lbl"><strong>PHP</strong></p>
+        </div>
+        <div class="col-xs-1">
+            <img src="/images/html.png" class="img-rounded img-responsive center-block" alt="html" width="50" height="50">
+            <p class="img-lbl"><strong>HTML</strong></p>
+        </div>
+        <div class="col-xs-1">
+            <img src="/images/css.png" class="img-rounded img-responsive center-block" alt="css" width="50" height="50">
+            <p class="img-lbl"><strong>CSS</strong></p>
+        </div>
+        <div class="col-xs-1">
+            <img src="/images/js.png" class="img-rounded img-responsive center-block" alt="js" width="50" height="50">
+            <p class="img-lbl"><strong>JavaScript</strong></p>
+        </div>
+        <div id="xml" class="col-xs-1">
+            <img src="/images/xml.png" class="img-rounded img-responsive center-block" alt="xml" width="50" height="25">
+            <p class="img-lbl"><strong>XML</strong></p>
+        </div>
+        <div class="col-xs-1">
+            <img src="/images/sql.png" class="img-rounded img-responsive center-block" alt="sql" width="50" height="50">
+            <p class="img-lbl"><strong>SQL</strong></p>
+        </div>
+        <div class="col-xs-1">
+            <img id="vb" src="/images/vb.png" class="img-rounded img-responsive center-block" alt="visual basic" width="50" height="30">
+            <p class="img-lbl"><strong>Visual Basic</strong></p>
+        </div>
+        <div class="col-xs-1">
+            <img src="/images/jquery.jpg" class="img-rounded img-responsive center-block" alt="java" width="50" height="50">
+            <p class="img-lbl"><strong>jQuery</strong></p>
+        </div>
+        <div class="col-xs-1">
+            <img src="/images/bootstrap.jpg" class="img-rounded img-responsive center-block" alt="cpp" width="50" height="50">
+            <p class="img-lbl"><strong>Bootstrap</strong></p>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <h5 class="expertise">Platforms/Libraries:</h5>
+        <div class="col-xs-1">
+            <img src="/images/rails.png" class="img-rounded img-responsive center-block" alt="ruby" width="50" height="50">
+            <p class="img-lbl text-center"><strong>Ruby on Rails</strong></p>
+        </div>
+        <div class="col-xs-1">
+            <img src="/images/android.png" class="img-rounded img-responsive center-block" alt="android" width="50" height="50">
+            <p class="img-lbl"><strong>Android</strong></p>
+        </div>
+        <div class="col-xs-1">
+            <img src="/images/git.png" class="img-rounded img-responsive center-block" alt="github" width="50" height="50">
+            <p class="img-lbl"><strong>GitHub</strong></p>
+        </div>
+        <div class="col-xs-1">
+            <img src="/images/heroku.jpeg" class="img-rounded img-responsive center-block" alt="heroku" width="50" height="50">
+            <p class="img-lbl"><strong>Heroku</strong></p>
+        </div>
+        <div class="col-xs-3">
+            <img src="/images/gcp.png" class="img-responsive left-block" alt="google cloud platform" width="50" height="50">
+            <ul class="gcp-lbl list-unstyled">
+                <li class="gcp">Google Cloud Platform</li>
+                <li>Compute Engine</li>
+                <li>App Engine</li>
+                <li>Cloud SQL</li>
+                <li>Cloud Datastore</li>
+                <li>Endpoints</li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <h5 class="expertise">Software:</h5>
+        <div class="col-xs-1">
+            <img src="/images/mac.png" class="img-rounded img-responsive center-block" alt="mac" width="50" height="50">
+            <p class="img-lbl"><strong>Mac Terminal</strong></p>
+        </div>
+        <div class="col-xs-1">
+            <img src="/images/linux.png" class="img-rounded img-responsive center-block" alt="linux" width="50" height="50">
+            <p class="img-lbl"><strong>Linux Terminal</strong></p>
+        </div>
+        <div class="col-xs-1">
+            <img src="/images/android-studio.png" class="img-rounded img-responsive center-block" alt="android studio" width="50" height="50">
+            <p class="img-lbl"><strong>Android Studio</strong></p>
+        </div>
+        <div class="col-xs-1">
+            <img src="/images/intellij.png" class="img-rounded img-responsive center-block" alt="intellij" width="50" height="50">
+            <p class="img-lbl"><strong>IntelliJ IDEA</strong></p>
+        </div>
+        <div class="col-xs-1">
+            <img src="/images/eclipse.png" class="img-rounded img-responsive center-block" alt="eclipse" width="50" height="50">
+            <p class="img-lbl"><strong>Eclipse</strong></p>
+        </div>
+        <div class="col-xs-1">
+            <img src="/images/windows.png" class="img-rounded img-responsive center-block" alt="windows" width="50" height="50">
+            <p class="img-lbl"><strong>Windows</strong></p>
+        </div>
+        <div class="col-xs-1">
+            <img src="/images/vb.png" class="img-rounded img-responsive center-block" alt="visual studio" width="50" height="30">
+            <p class="img-lbl"><strong>Visual Studio</strong></p>
+        </div>
     </div>
     <hr>
     <h4>RELATED EXPERIENCE</h4>
